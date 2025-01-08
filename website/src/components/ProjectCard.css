@@ -8,6 +8,11 @@
     margin-right: 100px;
     flex-direction: row; /* Default to row for larger screens */
     margin-bottom: 50px;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.container:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
 }
 
 .image {
@@ -50,7 +55,7 @@
 .link {
     color: #e0e0dc;
     font-size: 20px;
-    text-decoration: italic;
+    text-decoration: underline;
     font-weight: bold;
     margin-right: 15px; /* Space between the links */
 }
@@ -87,5 +92,6 @@
     .link {
         font-size: 18px; /* Smaller font size for links */
         margin-right: 10px; /* Reduce space between links */
+        text-decoration: underline;
     }
 }

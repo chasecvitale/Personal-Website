@@ -7,20 +7,20 @@ const Footer = () => {
         <footer className="footer">
             {/* Left Side: Website Name */}
             <div className="left">
-                <a href="/" className="link">
+                <a href="/" className="footer-link">
                     Chase C. Vitale
                 </a>
             </div>
 
             {/* Right Side: Links */}
             <div className="right">
-                <a href={Resume} className ='link' target="_blank" rel="noreferrer">
+                <a href={Resume} className ='footer-link' target="_blank" rel="noreferrer">
                     Résumé
                 </a>
-                <a href="https://www.linkedin.com/in/chasecvitale/" target="_blank" rel="noopener noreferrer" className="link">
+                <a href="https://www.linkedin.com/in/chasecvitale/" target="_blank" rel="noopener noreferrer" className="footer-link">
                     LinkedIn
                 </a>
-                <a href="https://github.com/chasecvitale" target="_blank" rel="noopener noreferrer" className="link">
+                <a href="https://github.com/chasecvitale" target="_blank" rel="noopener noreferrer" className="footer-link">
                     GitHub
                 </a>
             </div>
