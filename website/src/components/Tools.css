@@ -9,6 +9,7 @@
 
 .iconImage {
     height: 150px;
+    width: auto;
     cursor: default;
 }
 
