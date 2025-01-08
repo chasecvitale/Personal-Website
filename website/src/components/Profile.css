@@ -8,7 +8,7 @@
 }
 
 .profileSection img {
-    width: 300px;
+    width: 400px;
     height: '100%';
     margin-right: 100px; /* Space between the image and text */
 }
@@ -22,7 +22,7 @@
 .helloSection {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .helloText {
@@ -39,8 +39,9 @@
 }
 
 .bodyText {
-    font-size: 23px;
+    font-size: 22px;
     color: #2a2829;
+    line-height: 1.45;
 }
 
 /* Media Query for Small Screens */
