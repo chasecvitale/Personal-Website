@@ -1,0 +1,67 @@
+/* Default styles for larger screens */
+.profileSection {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 100px;
+    padding-right: 100px;
+    flex-direction: row; /* Image on the left, text on the right */
+}
+
+.profileSection img {
+    width: 300px;
+    height: '100%';
+    margin-right: 100px; /* Space between the image and text */
+}
+
+.textSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.helloSection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.helloText {
+    font-size: 18px;
+    font-style: italic;
+    color: #2a2829;
+    margin-right: 10px;
+}
+
+.line {
+    flex: 100%;
+    height: 1px;
+    background-color: #2a2829;
+}
+
+.bodyText {
+    font-size: 23px;
+    color: #2a2829;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 750px) {
+    .profileSection {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center align for mobile */
+    }
+
+    .profileSection img {
+        margin-right: 0; /* Remove margin when stacked */
+        margin-bottom: 50px; /* Add space between image and text */
+    }
+}
+
+/* Styles for inline text */
+.italicText {
+    font-style: italic;
+    color: #2a2829; /* Keep the default text color for italics */
+}
+
+.purpleText {
+    color: #642c95; /* Example color: tomato */
+}
