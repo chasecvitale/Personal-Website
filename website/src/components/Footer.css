@@ -16,7 +16,7 @@
     font-weight: bold;
 }
 
-.right {
+.footer-right {
     display: flex;
     gap: 1.5rem;
     align-items: center;
@@ -54,7 +54,7 @@
         margin-bottom: 10px; /* Add space between sections */
     }
 
-    .right {
+    .footer-right {
         flex-direction: column; /* Stack the links vertically */
         align-items: center; /* Center the links */
     }

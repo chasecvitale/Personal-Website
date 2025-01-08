@@ -16,6 +16,7 @@ function App() {
                 <title>Chase C. Vitale</title>
             </Helmet>
             <Header />
+            <br/> <br/>
             <Title title="About Me" />
             <Profile />
             <Title title="Projects" />
@@ -24,6 +25,7 @@ function App() {
             <Languages />
             <Title title="Tools" />
             <Tools />
+            <Title title="" /> 
             <Footer />
         </div>
     );

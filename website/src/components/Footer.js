@@ -13,7 +13,7 @@ const Footer = () => {
             </div>
 
             {/* Right Side: Links */}
-            <div className="right">
+            <div className="footer-right">
                 <a href={Resume} className ='footer-link' target="_blank" rel="noreferrer">
                     Résumé
                 </a>
