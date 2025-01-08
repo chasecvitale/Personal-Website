@@ -12,7 +12,7 @@ function App() {
     return (
         <div>
             <Helmet>
-                <link rel="icon" href="./assets/favicon.ico" />
+                <link rel="icon" type="image/png" href="../public/favicon.ico" sizes="16x16" />
                 <title>Chase C. Vitale</title>
             </Helmet>
             <Header />
