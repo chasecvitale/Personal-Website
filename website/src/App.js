@@ -13,6 +13,9 @@ function App() {
             <Profile />
             <Title title="My Projects"/>
             <Projects />
+            <Title title="My Languages"/>
+            <Title title="My Tools"/>
+
             <Footer />
         </div>
     );

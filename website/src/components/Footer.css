@@ -1,4 +1,4 @@
-/* Footer.css */
+/* Header.css */
 
 .footer {
     display: flex;
@@ -6,8 +6,8 @@
     align-items: center;
     padding-left: 100px;
     padding-right: 100px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     background-color: #2a2829;
 }
 
@@ -22,10 +22,21 @@
     align-items: center;
 }
 
-.link {
+.footer-link {
     color: #e0e0dc;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 18px;
+}
+
+/* Ensure no underlines and consistent color on hover/active */
+.footer-link:visited {
+    color: #e0e0dc; /* Keeps the link color the same after visiting */
+}
+
+.footer-link:hover,
+.footer-link:active {
+    color: #e0e0dc; /* Keeps the color on hover/active */
+    text-decoration: none; /* Removes the underline on hover/active */
 }
 
 /* Media Query for Small Screens */
@@ -48,7 +59,7 @@
         align-items: center; /* Center the links */
     }
 
-    .link {
+    .footer-link {
         font-size: 14px; /* Reduce link font size */
         margin-bottom: 10px; /* Add space between links */
     }
