@@ -1,0 +1,24 @@
+/* Apply to the body to make it a flex container */
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e0e0dc;
+  display: flex;
+  flex-direction: column; /* Arrange elements in a column */
+  min-height: 100vh; /* Ensure body takes up at least the full height of the viewport */
+}
+
+/* Make the main content area flexible and take up available space */
+.main-content {
+  flex: 1; /* This makes the content area grow to fill available space */
+}
+
+/* Footer styling */
+footer {
+  background-color: #2a2829;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
