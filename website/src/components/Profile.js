@@ -18,15 +18,15 @@ const Profile = () => {
 
                 {/* Large Text */}
                 <p className="bodyText">
-                    I'm <span className="italicText">Chase</span>, a student at <span className="purpleText">NYU</span> studying <span className="italicText">Mathematics</span> and <span className="italicText">Computer Science</span>, with a minor in <span className="italicText">Economics</span>.
+                    I'm Chase, a student at <span className="purpleText">NYU</span> studying Mathematics and Computer Science, with a minor in Economics.
                     <br></br>
                     <br></br>
                     <br></br>
-                    As part of my studies, I have learned valuable skills through classes such as <span className="italicText">Data Structures</span> and <span className="italicText">Linear Algebra</span>. I have also delved into the theory side of Computer Science through <span className="italicText">Texts and Ideas: AI and Its Discontents</span>.
+                    I have learned valuable skills through classes such as Data Structures and Linear Algebra. Additionaly, I delved into the theory side of Computer Science through Texts and Ideas: AI and Its Discontents.
                     <br></br>
                     <br></br>
                     <br></br>
-                    Scroll down to see my recent projects, my languages, and my tools!
+                    Scroll down to see my recent projects, languages, and tools!
                     <br></br>
                     <br></br>
                 </p>
