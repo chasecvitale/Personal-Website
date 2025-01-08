@@ -11,7 +11,7 @@
     background-color: #2a2829;
     position: fixed; /* Keeps the header fixed */
     top: 0;
-    width: 100%; /* Ensures the header spans the full width */
+    width: 100%;
     transition: transform 0.3s ease-in-out; /* Smooth transition */
     z-index: 1000; /* Ensures the header stays on top */
 }
@@ -58,6 +58,7 @@
         padding-top: 50px; /* Reduce top padding */
         padding-bottom: 50px; /* Reduce bottom padding */
         position: relative;
+        width: auto;
     }
 
     .left {
