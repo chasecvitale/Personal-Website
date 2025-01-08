@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "node": "^23.5.0",
+    "react": "^19.0.0",
+    "react-scripts": "^5.0.1"
+  }
+}
