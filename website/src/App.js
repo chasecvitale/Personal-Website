@@ -12,8 +12,8 @@ function App() {
     return (
         <div>
             <Helmet>
-                <link rel="icon" href="/favicon.ico" />
-                <title>My Portfolio</title>
+                <link rel="icon" href="./assets/favicon.ico" />
+                <title>Chase C. Vitale</title>
             </Helmet>
             <Header />
             <Title title="About Me" />
