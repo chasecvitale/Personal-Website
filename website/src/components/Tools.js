@@ -3,6 +3,11 @@ import ReactLogo from '../assets/react.png';
 import nodejs from '../assets/nodejs.png';
 import git from '../assets/git.png';
 import css from '../assets/css.svg';
+import expo from '../assets/expo.png';
+import xcode from '../assets/xcode.png';
+import firebase from '../assets/firebase.svg';
+import netlify from '../assets/netlify.png';
+
 import './Tools.css';
 
 const Tools = () => {
@@ -27,6 +32,22 @@ const Tools = () => {
             <div className="iconItem">
                 <img src={css} alt="CSS" className="iconImage" />
                 <p className="iconLabel">CSS</p>
+            </div>
+            <div className="iconItem">
+                <img src={expo} alt="Expo" className="iconImage" />
+                <p className="iconLabel">Expo</p>
+            </div>
+            <div className="iconItem">
+                <img src={xcode} alt="Xcode" className="iconImage" />
+                <p className="iconLabel">Xcode</p>
+            </div>
+            <div className="iconItem">
+                <img src={firebase} alt="Google Firebase" className="iconImage" />
+                <p className="iconLabel">Google Firebase</p>
+            </div>
+            <div className="iconItem">
+                <img src={netlify} alt="Netlify" className="iconImage" />
+                <p className="iconLabel">Netlify</p>
             </div>
         </div>
     );
