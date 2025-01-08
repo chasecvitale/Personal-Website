@@ -12,7 +12,7 @@ const styles = {
     container: {
         backgroundColor: '#e0e0dc',
         flex: '100%',
-        paddingTop: '75px',
+        paddingTop: '100px',
         paddingBottom: '75px',
         textAlign: 'center',
     },

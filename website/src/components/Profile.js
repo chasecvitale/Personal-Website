@@ -26,7 +26,7 @@ const Profile = () => {
                     <br></br>
                     <br></br>
                     <br></br>
-                    Scroll down to see my recent projects!
+                    Scroll down to see my recent projects, my languages, and my tools!
                     <br></br>
                     <br></br>
                 </p>
