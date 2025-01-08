@@ -1,0 +1,55 @@
+/* Footer.css */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #2a2829;
+}
+
+.left {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.right {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.link {
+    color: #e0e0dc;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 750px) {
+    .footer {
+        flex-direction: column; /* Stack items vertically */
+        padding-left: 20px; /* Reduce left padding */
+        padding-right: 20px; /* Reduce right padding */
+        padding-top: 50px; /* Reduce top padding */
+        padding-bottom: 50px; /* Reduce bottom padding */
+    }
+
+    .left {
+        font-size: 16px; /* Reduce font size */
+        margin-bottom: 10px; /* Add space between sections */
+    }
+
+    .right {
+        flex-direction: column; /* Stack the links vertically */
+        align-items: center; /* Center the links */
+    }
+
+    .link {
+        font-size: 14px; /* Reduce link font size */
+        margin-bottom: 10px; /* Add space between links */
+    }
+}

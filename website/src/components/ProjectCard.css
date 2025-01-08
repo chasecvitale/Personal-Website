@@ -1,0 +1,91 @@
+/* ProjectCard.css */
+
+.container {
+    background-color: #2a2829;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    flex-direction: row; /* Default to row for larger screens */
+    margin-bottom: 50px;
+}
+
+.image {
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 230px; /* Define a width for the image */
+    height: 100%;
+    object-fit: cover; /* Ensure the image scales properly */
+    margin-right: 20px; /* Add space between the image and text */
+}
+
+.textBox {
+    display: flex;
+    flex-direction: column; /* Stack name and description vertically */
+    height: 100%;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.nameText {
+    justify-content: flex-start;
+    color: #e0e0dc;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.descriptionText {
+    justify-content: flex-end;
+    color: #e0e0dc;
+    font-size: 23px;
+}
+
+.linkContainer {
+    margin-top: 20px; /* Add some space above the links */
+    align-items: bottom;
+}
+
+.link {
+    color: #e0e0dc;
+    font-size: 20px;
+    text-decoration: italic;
+    font-weight: bold;
+    margin-right: 15px; /* Space between the links */
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 750px) {
+    .container {
+        flex-direction: column; /* Stack image and text vertically on small screens */
+        align-items: center; /* Center the content */
+        margin-left: 20px; /* Reduce margins for small screens */
+        margin-right: 20px;
+    }
+
+    .image {
+        width: 50%; /* Make the image take full width on small screens */
+        height: auto; /* Let the height adjust automatically */
+        margin-bottom: 20px; /* Add space between image and text */
+    }
+
+    .textBox {
+        padding: 15px; /* Reduce padding on small screens */
+        margin-top: 20px; /* Reduce top margin */
+        margin-bottom: 20px; /* Reduce bottom margin */
+    }
+
+    .nameText {
+        font-size: 18px; /* Smaller font size for small screens */
+    }
+
+    .descriptionText {
+        font-size: 18px; /* Smaller font size for small screens */
+    }
+
+    .link {
+        font-size: 18px; /* Smaller font size for links */
+        margin-right: 10px; /* Reduce space between links */
+    }
+}

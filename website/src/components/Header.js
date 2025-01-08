@@ -1,56 +1,31 @@
 import React from 'react';
+import './Header.css'; // Import the CSS file
+import Resume from '../assets/Vitale-Resume.pdf';
 
 const Header = () => {
     return (
-        <header style={styles.header}>
+        <header className="header">
             {/* Left Side: Website Name */}
-            <div style={styles.left}>
-                <a href="/" style={styles.link}>
+            <div className="left">
+                <a href="/" className="link">
                     Chase C. Vitale
                 </a>
             </div>
 
             {/* Right Side: Links */}
-            <div style={styles.right}>
-                <a href="/resume" style={styles.link}>
+            <div className="right">
+                <a href={Resume} className="link" target="_blank" rel="noreferrer">
                     Résumé
                 </a>
-                <a href="https://www.linkedin.com/in/chasecvitale/" target="_blank" rel="noopener noreferrer" style={styles.link}>
+                <a href="https://www.linkedin.com/in/chasecvitale/" target="_blank" rel="noopener noreferrer" className="link">
                     LinkedIn
                 </a>
-                <a href="https://github.com/chasecvitale" target="_blank" rel="noopener noreferrer" style={styles.link}>
+                <a href="https://github.com/chasecvitale" target="_blank" rel="noopener noreferrer" className="link">
                     GitHub
                 </a>
             </div>
         </header>
     );
-};
-
-const styles = {
-    header: {
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        paddingLeft: '100px',
-        paddingRight: '100px',
-        paddingTop: '25px',
-        paddingBottom: '25px',
-        backgroundColor: '#2a2829',
-    },
-    left: {
-        fontSize: '18px',
-        fontWeight: 'bold',
-    },
-    right: {
-        display: 'flex',
-        gap: '1.5rem',
-        alignItems: 'center',
-    },
-    link: {
-        color: '#e0e0dc',
-        textDecoration: 'none',
-        fontSize: '18',
-    },
 };
 
 export default Header;
