@@ -4,7 +4,7 @@ const ProjectCard = ({ name, description, photoUrl, color, textColor }) => {  //
     return (
         <div style={{ ...styles.card, backgroundColor: color }}> {/* Apply dynamic background color */}
             <p style={{ ...styles.name, color: textColor }}>{name}</p>
-            <img src={photoUrl} alt="Project Image" style={styles.photo} /> {/* Corrected src to photoUrl */}
+            <img src={photoUrl} alt="Project" style={styles.photo} /> {/* Corrected src to photoUrl */}
             <p style={styles.description}>{description}</p>
         </div>
     );
@@ -12,7 +12,6 @@ const ProjectCard = ({ name, description, photoUrl, color, textColor }) => {  //
 
 const styles = {
     card: {
-        padding: '20px',
         flexDirection: 'column',
         display: 'flex',
         width: '300px',
