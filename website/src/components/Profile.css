@@ -48,6 +48,8 @@
     .profileSection {
         flex-direction: column; /* Stack image and text vertically */
         align-items: center; /* Center align for mobile */
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .profileSection img {

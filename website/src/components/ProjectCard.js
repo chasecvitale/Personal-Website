@@ -1,41 +1,36 @@
 import React from 'react';
+import './ProjectCard.css'; // Import the CSS file
 
-const ProjectCard = ({ name, description, photoUrl, color, textColor }) => {  // Destructure the props
+const ProjectCard = ({ name, photoUrl, description, demoLink, presentationLink, website }) => {
     return (
-        <div style={{ ...styles.card, backgroundColor: color }}> {/* Apply dynamic background color */}
-            <p style={{ ...styles.name, color: textColor }}>{name}</p>
-            <img src={photoUrl} alt="Project" style={styles.photo} /> {/* Corrected src to photoUrl */}
-            <p style={styles.description}>{description}</p>
+        <div className="container">
+            <img className="image" src={photoUrl} alt={name} />
+            <div className="textBox">
+                <p className="nameText">{name}</p>
+                <p className="descriptionText">{description}</p>
+
+                {/* Conditionally render Demo and Presentation links */}
+                <div className="linkContainer">
+                    {demoLink && (
+                        <a href={demoLink} target="_blank" rel="noopener noreferrer" className="link">
+                            Demo
+                        </a>
+                    )}
+                    {presentationLink && (
+                        <a href={presentationLink} target="_blank" rel="noopener noreferrer" className="link">
+                            Presentation
+                        </a>
+                    )}
+
+                    {website && (
+                        <a href={website} target="_blank" rel="noopener noreferrer" className="link">
+                            Website
+                        </a>
+                    )}
+                </div>
+            </div>
         </div>
     );
 };
-
-const styles = {
-    card: {
-        flexDirection: 'column',
-        display: 'flex',
-        width: '300px',
-        height: '300px',
-        //borderRadius: '15px',
-        borderColor: '#2a2829',
-        borderWidth: '1px',
-        borderStyle: 'solid',
-        padding: '30px',
-    },
-
-    name: {
-        fontSize: '25px',
-        textAlign: 'center',
-    },
-
-    photo: {
-        width: '90%',
-    },
-
-    description: {
-        fontSize: '27px',
-        color: '#e0e0dc',
-    },
-}
 
 export default ProjectCard;
