@@ -17,7 +17,7 @@
 }
 
 .header.hidden {
-    transform: translateY(-100%); /* Moves the header out of view */
+    transform: translateY(-200px); /* Moves the header out of view; solves flickering tab issue */
 }
 
 .left {
