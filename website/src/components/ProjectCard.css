@@ -71,7 +71,7 @@
     }
 
     .image {
-        width: 50%; /* Make the image take full width on small screens */
+        width: 35%; /* Make the image take full width on small screens */
         height: auto; /* Let the height adjust automatically */
         margin-bottom: 20px; /* Add space between image and text */
     }
