@@ -1,5 +1,3 @@
-/* Header.css */
-
 .footer {
     display: flex;
     justify-content: space-between;
@@ -29,39 +27,38 @@
     font-size: 18px;
 }
 
-/* Ensure no underlines and consistent color on hover/active */
 .footer-link:visited {
-    color: #e0e0dc; /* Keeps the link color the same after visiting */
+    color: #e0e0dc;
 }
 
 .footer-link:hover,
 .footer-link:active {
-    color: #e0e0dc; /* Keeps the color on hover/active */
-    text-decoration: none; /* Removes the underline on hover/active */
+    color: #e0e0dc;
+    text-decoration: none;
 }
 
 /* Media Query for Small Screens */
 @media (max-width: 750px) {
     .footer {
-        flex-direction: column; /* Stack items vertically */
-        padding-left: 20px; /* Reduce left padding */
-        padding-right: 20px; /* Reduce right padding */
-        padding-top: 50px; /* Reduce top padding */
-        padding-bottom: 50px; /* Reduce bottom padding */
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .left {
-        font-size: 16px; /* Reduce font size */
-        margin-bottom: 10px; /* Add space between sections */
+        font-size: 16px;
+        margin-bottom: 10px;
     }
 
     .footer-right {
-        flex-direction: column; /* Stack the links vertically */
-        align-items: center; /* Center the links */
+        flex-direction: column;
+        align-items: center;
     }
 
     .footer-link {
-        font-size: 14px; /* Reduce link font size */
-        margin-bottom: 10px; /* Add space between links */
+        font-size: 14px;
+        margin-bottom: 10px;
     }
 }

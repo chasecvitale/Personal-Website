@@ -1,6 +1,6 @@
 .iconItem {
     text-align: center;
-    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .iconItem:hover {
