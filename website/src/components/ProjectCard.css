@@ -16,41 +16,41 @@
 }
 
 .image {
-    margin-left: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 230px; /* Define a width for the image */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    width: 230px; /* Set a fixed width for uniform text alignment */
     height: 100%;
-    object-fit: cover; /* Ensure the image scales properly */
-    margin-right: 20px; /* Add space between the image and text */
+    object-fit: cover; /* Ensure proper image scaling */
+    margin: 50px 20px 50px 20px; /* Keep consistent spacing */
 }
 
 .textBox {
     display: flex;
-    flex-direction: column; /* Stack name and description vertically */
-    height: 100%;
+    flex-direction: column;
+    flex: 1; /* Allows it to take remaining space evenly */
     padding: 20px;
     margin-top: 15px;
     margin-bottom: 15px;
-    margin-right: 30px;
+    text-align: left; /* Ensures text inside is left-aligned */
 }
 
 .nameText {
-    justify-content: flex-start;
     color: #e0e0dc;
     font-size: 23px;
     font-weight: bold;
+    text-align: left; /* Align text to the left */
 }
 
 .descriptionText {
-    justify-content: flex-end;
     color: #e0e0dc;
     font-size: 23px;
+    text-align: left; /* Align text to the left */
 }
 
 .linkContainer {
-    margin-top: 20px; /* Add some space above the links */
-    align-items: bottom;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Ensures links are left-aligned */
 }
 
 .link {
@@ -80,19 +80,25 @@
         padding: 15px; /* Reduce padding on small screens */
         margin-top: 20px; /* Reduce top margin */
         margin-bottom: 20px; /* Reduce bottom margin */
+        width: 100%; /* Ensure text spans full width */
     }
 
     .nameText {
-        font-size: 18px; /* Smaller font size for small screens */
+        font-size: 23px; /* Smaller font size for small screens */
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .descriptionText {
-        font-size: 18px; /* Smaller font size for small screens */
+        font-size: 23px; /* Smaller font size for small screens */
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .link {
-        font-size: 18px; /* Smaller font size for links */
+        font-size: 20px; /* Smaller font size for links */
         margin-right: 10px; /* Reduce space between links */
         text-decoration: underline;
+        margin-left: 20px;
     }
 }

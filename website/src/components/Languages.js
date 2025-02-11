@@ -2,6 +2,8 @@ import React from 'react';
 import Java from "../assets/java.png";
 import Python from "../assets/python.png";
 import JS from "../assets/js.png";
+import C from "../assets/c.png";
+import swift from "../assets/swift.png";
 import './Languages.css';
 
 const Languages = () => {
@@ -18,6 +20,14 @@ const Languages = () => {
             <div className="iconItem">
                 <img src={JS} alt="JavaScript" className="iconImage" />
                 <p className="iconLabel">JavaScript</p>
+            </div>
+            <div className="iconItem">
+                <img src={C} alt="C" className="iconImage" />
+                <p className="iconLabel">C</p>
+            </div>
+            <div className="iconItem">
+                <img src={swift} alt="Swift" className="iconImage" />
+                <p className="iconLabel">Swift</p>
             </div>
         </div>
     );

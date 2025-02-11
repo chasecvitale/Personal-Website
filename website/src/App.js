@@ -13,7 +13,7 @@ function App() {
         <div>
             <Helmet>
                 <link rel="icon" type="image/png" href="../public/favicon.ico" sizes="16x16" />
-                <title>Chase C. Vitale</title>
+                <title>Chase C. Vitale | Portfolio</title>
             </Helmet>
             <Header />
             <br/> <br/>

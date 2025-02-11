@@ -6,7 +6,6 @@ import css from '../assets/css.svg';
 import expo from '../assets/expo.png';
 import xcode from '../assets/xcode.png';
 import firebase from '../assets/firebase.svg';
-import netlify from '../assets/netlify.png';
 
 import './Tools.css';
 
@@ -44,10 +43,6 @@ const Tools = () => {
             <div className="iconItem">
                 <img src={firebase} alt="Google Firebase" className="iconImage" />
                 <p className="iconLabel">Google Firebase</p>
-            </div>
-            <div className="iconItem">
-                <img src={netlify} alt="Netlify" className="iconImage" />
-                <p className="iconLabel">Netlify</p>
             </div>
         </div>
     );
