@@ -3,7 +3,6 @@ import Java from "../assets/java.png";
 import Python from "../assets/python.png";
 import JS from "../assets/js.png";
 import C from "../assets/c.png";
-import swift from "../assets/swift.png";
 import './Languages.css';
 
 const Languages = () => {

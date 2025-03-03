@@ -25,16 +25,15 @@
     color: #e0e0dc;
     text-decoration: none;
     font-size: 18px;
+    cursor: pointer;
+    font-family: "Times New Roman", serif; /* Ensure the font is Times New Roman */
 }
 
-.footer-link:visited {
-    color: #e0e0dc;
-}
-
-.footer-link:hover,
-.footer-link:active {
-    color: #e0e0dc;
-    text-decoration: none;
+/* Remove default button styling */
+button.footer-link {
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
 }
 
 /* Media Query for Small Screens */

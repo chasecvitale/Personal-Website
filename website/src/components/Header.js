@@ -83,13 +83,12 @@ const Header = () => {
 
             {/* Right Side: Links */}
             <div className="right">
-                <a 
-                    href="#" 
+                <button 
                     className="header-link" 
                     onClick={openPDF} // Open PDF in a new tab
                 >
                     Résumé
-                </a>
+                </button>
                 <a
                     href="https://www.linkedin.com/in/chasecvitale/"
                     target="_blank"

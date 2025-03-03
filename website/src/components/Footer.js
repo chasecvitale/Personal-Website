@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css'; // Import the CSS file
-import Resume from '../assets/Vitale-Resume.pdf'
+import Resume from '../assets/Vitale-Resume.pdf';
 
 const Footer = () => {
     const openPDF = (e) => {
@@ -36,7 +36,6 @@ const Footer = () => {
         pdfWindow.focus();
     };
 
-
     return (
         <footer className="footer">
             {/* Left Side: Website Name */}
@@ -48,13 +47,12 @@ const Footer = () => {
 
             {/* Right Side: Links */}
             <div className="footer-right">
-                <a 
-                    href="#" 
-                    className="header-link" 
+                <button 
+                    className="footer-link" 
                     onClick={openPDF} // Open PDF in a new tab
                 >
                     Résumé
-                </a>
+                </button>
                 <a href="https://www.linkedin.com/in/chasecvitale/" target="_blank" rel="noopener noreferrer" className="footer-link">
                     LinkedIn
                 </a>
