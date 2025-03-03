@@ -30,10 +30,15 @@
     margin-right: 200px;
 }
 
-.header-link {
+/* Style for links and buttons */
+.header-link, button.header-link {
     color: #e0e0dc;
     text-decoration: none;
     font-size: 18px;
+    background: none; /* Remove background for button */
+    border: none; /* Remove border for button */
+    padding: 0; /* Remove padding for button */
+    font-family: 'Times New Roman', serif; /* Ensure font is consistent */
 }
 
 .header-link:visited {
@@ -41,9 +46,15 @@
 }
 
 .header-link:hover,
-.header-link:active {
+.header-link:active,
+button.header-link:hover,
+button.header-link:active {
     color: #e0e0dc;
     text-decoration: none;
+}
+
+button.header-link {
+    cursor: pointer; /* Ensure button has a pointer cursor */
 }
 
 /* Media Query for Small Screens */
