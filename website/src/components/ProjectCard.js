@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProjectCard.css'; // Import the CSS file
 
-const ProjectCard = ({ name, photoUrl, description, demoLink, presentationLink, website }) => {
+const ProjectCard = ({ name, photoUrl, description, demoLink, presentationLink, websiteHSRN, websiteCORELINK, website }) => {
     return (
         <div className="container">
             <img className="image" src={photoUrl} alt={name} />
@@ -25,6 +25,18 @@ const ProjectCard = ({ name, photoUrl, description, demoLink, presentationLink, 
                     {website && (
                         <a href={website} target="_blank" rel="noopener noreferrer" className="link">
                             Website
+                        </a>
+                    )}
+
+                    {websiteHSRN && (
+                        <a href={websiteHSRN} target="_blank" rel="noopener noreferrer" className="link">
+                            HSRN Website
+                        </a>
+                    )}
+
+                    {websiteCORELINK && (
+                        <a href={websiteCORELINK} target="_blank" rel="noopener noreferrer" className="link">
+                            Corelink Website
                         </a>
                     )}
                 </div>
