@@ -25,10 +25,6 @@ const Languages = () => {
                 <img src={C} alt="C" className="iconImage" />
                 <p className="iconLabel">C</p>
             </div>
-            <div className="iconItem">
-                <img src={swift} alt="Swift" className="iconImage" />
-                <p className="iconLabel">Swift</p>
-            </div>
         </div>
     );
 };
