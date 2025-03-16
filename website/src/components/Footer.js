@@ -10,7 +10,7 @@ const Footer = () => {
         const pdfWindow = window.open("");
 
         const title = "Chase C. Vitale | Résumé";
-        const URI = "Resume";
+        const URI = "static/media/Vitale-Resume.89ad76dc97b9584c5b39.pdf";
         
         // Make sure Resume points to the correct URL
         const html = `
