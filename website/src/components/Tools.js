@@ -6,7 +6,7 @@ import css from '../assets/css.svg';
 import expo from '../assets/expo.png';
 import xcode from '../assets/xcode.png';
 import firebase from '../assets/firebase.svg';
-import clinicjsdoctor from '../assets/clinic.jsdoctor';
+import clinicjsdoctor from '../assets/clinicjsdoctor.png';
 
 import './Tools.css';
 
