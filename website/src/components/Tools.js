@@ -6,6 +6,7 @@ import css from '../assets/css.svg';
 import expo from '../assets/expo.png';
 import xcode from '../assets/xcode.png';
 import firebase from '../assets/firebase.svg';
+import clinicjsdoctor from '../assets/clinic.jsdoctor';
 
 import './Tools.css';
 
@@ -43,6 +44,10 @@ const Tools = () => {
             <div className="iconItem">
                 <img src={firebase} alt="Google Firebase" className="iconImage" />
                 <p className="iconLabel">Google Firebase</p>
+            </div>
+            <div className="iconItem">
+                <img src={clinicjsdoctor} alt="Clinic.js Doctor" className="iconImage" />
+                <p className="iconLabel">Clinic.js Doctor</p>
             </div>
         </div>
     );
