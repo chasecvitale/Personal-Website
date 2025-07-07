@@ -15,7 +15,6 @@ const Header = () => {
         const pdfWindow = window.open("");
 
         const title = "Chase C. Vitale | Résumé";
-        const URI = "static/media/Vitale-Resume.89ad76dc97b9584c5b39.pdf";
         
         // Make sure Resume points to the correct URL
         const html = `
@@ -35,7 +34,7 @@ const Header = () => {
         pdfWindow.document.close();
         
         // Modify the URL in the new window’s address bar
-        pdfWindow.history.pushState(null, null, URI);
+        pdfWindow.history.pushState(null, null);
 
         // Focus the new tab (though this may be blocked by some browsers)
         pdfWindow.focus();
