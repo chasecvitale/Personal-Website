@@ -80,7 +80,7 @@ button.header-link {
         margin-right: 0px;
     }
 
-    .header-link {
+    .header-link, button.header-link {
         font-size: 14px;
         margin-bottom: 10px;
     }

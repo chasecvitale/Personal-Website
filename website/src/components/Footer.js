@@ -18,7 +18,7 @@ const Footer = () => {
       {/* Right Side: Links */}
       <div className="footer-right">
         <button className="footer-link" onClick={openPDF}>
-          Résumé
+          Resume
         </button>
         <a
           href="https://www.linkedin.com/in/chasecvitale/"

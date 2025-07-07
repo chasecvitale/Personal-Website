@@ -7,7 +7,7 @@ import './Languages.css';
 
 const Languages = () => {
     return (
-        <div style={styles.container}>
+        <div className="iconContainer">
             <div className="iconItem">
                 <img src={Python} alt="Python" className="iconImage" />
                 <p className="iconLabel">Python</p>
@@ -26,17 +26,6 @@ const Languages = () => {
             </div>
         </div>
     );
-};
-
-const styles = {
-    container: {
-        display: 'flex',
-        justifyContent: 'center',
-        flexWrap: 'wrap',
-        gap: '60px',
-        marginLeft: '100px',
-        marginRight: '100px',
-    },
 };
 
 export default Languages;
