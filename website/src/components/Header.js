@@ -10,8 +10,7 @@ const Header = () => {
 
   const openPDF = (e) => {
     e.preventDefault();
-    // Open the PDF directly in a new tab
-    window.open(Resume, 'Chase C. Vitale | Resume', 'noopener,noreferrer');
+    window.open('/resume.html', '_blank', 'noopener,noreferrer');
   };
 
   useEffect(() => {

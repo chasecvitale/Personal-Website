@@ -5,8 +5,7 @@ import Resume from '../assets/Vitale-Resume.pdf';
 const Footer = () => {
   const openPDF = (e) => {
     e.preventDefault();
-    // Open the PDF directly in a new tab/window
-    window.open(Resume, 'Chase C. Vitale | Resume', 'noopener,noreferrer');
+    window.open('/resume.html', '_blank', 'noopener,noreferrer');
   };
 
   return (
