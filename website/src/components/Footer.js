@@ -6,7 +6,7 @@ const Footer = () => {
   const openPDF = (e) => {
     e.preventDefault();
     // Open the PDF directly in a new tab/window
-    window.open(Resume, '_blank', 'noopener,noreferrer');
+    window.open(Resume, 'Chase C. Vitale | Resume', 'noopener,noreferrer');
   };
 
   return (
