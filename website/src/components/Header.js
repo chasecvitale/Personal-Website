@@ -1,112 +1,79 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './Header.css';
-import Resume from '../assets/Vitale-Resume.pdf'; // Ensure the Resume path is correct
+import Resume from '../assets/Vitale-Resume.pdf'; // Make sure this path is correct
 
 const Header = () => {
-    const [isScrollingDown, setIsScrollingDown] = useState(false);
-    const [isSmallScreen, setIsSmallScreen] = useState(false);
-    const [isAtTop, setIsAtTop] = useState(true); // Track if the user is at the top of the page
-    const lastScrollY = useRef(0);
+  const [isScrollingDown, setIsScrollingDown] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [isAtTop, setIsAtTop] = useState(true);
+  const lastScrollY = useRef(0);
 
-    const openPDF = (e) => {
-        e.preventDefault(); // Prevent the default link behavior
+  const openPDF = (e) => {
+    e.preventDefault();
+    // Open the PDF directly in a new tab
+    window.open(Resume, '_blank', 'noopener,noreferrer');
+  };
 
-        // Open a new window
-        const pdfWindow = window.open("");
-
-        const title = "Chase C. Vitale | Résumé";
-        
-        // Make sure Resume points to the correct URL
-        const html = `
-            <html>
-                <head>
-                    <title>${title}</title>
-                    <link rel="icon" type="image/png" href="../public/favicon.ico" sizes="16x16" />
-                </head>
-                <body style="margin:0">
-                    <embed width="100%" height="100%" src="${Resume}" type="application/pdf">
-                </body>
-            </html>
-        `;
-        
-        // Write the HTML content to the new window
-        pdfWindow.document.write(html);
-        pdfWindow.document.close();
-        
-        // Modify the URL in the new window’s address bar
-        pdfWindow.history.pushState(null, null);
-
-        // Focus the new tab (though this may be blocked by some browsers)
-        pdfWindow.focus();
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 750);
     };
 
-    useEffect(() => {
-        const handleResize = () => {
-            setIsSmallScreen(window.innerWidth <= 750);
-        };
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      setIsAtTop(currentScrollY === 0);
 
-        const handleScroll = () => {
-            const currentScrollY = window.scrollY;
+      if (!isSmallScreen) {
+        setIsScrollingDown(currentScrollY > lastScrollY.current && currentScrollY > 0);
+        lastScrollY.current = currentScrollY;
+      }
+    };
 
-            // Check if the user is at the top of the page
-            setIsAtTop(currentScrollY === 0);
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('scroll', handleScroll);
 
-            if (!isSmallScreen) {
-                setIsScrollingDown(currentScrollY > lastScrollY.current && currentScrollY > 0);
-                lastScrollY.current = currentScrollY;
-            }
-        };
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [isSmallScreen]);
 
-        handleResize(); // Set the initial screen size
-        window.addEventListener('resize', handleResize);
-        window.addEventListener('scroll', handleScroll);
+  return (
+    <header
+      className={`header ${isScrollingDown && !isSmallScreen && !isAtTop ? 'hidden' : ''}`}
+    >
+      {/* Left Side: Website Name */}
+      <div className="left">
+        <a href="/" className="header-link">
+          Chase C. Vitale
+        </a>
+      </div>
 
-        return () => {
-            window.removeEventListener('resize', handleResize);
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, [isSmallScreen]);
-
-    return (
-        <header
-            className={`header ${
-                isScrollingDown && !isSmallScreen && !isAtTop ? 'hidden' : ''
-            }`}
+      {/* Right Side: Links */}
+      <div className="right">
+        <button className="header-link" onClick={openPDF}>
+          Résumé
+        </button>
+        <a
+          href="https://www.linkedin.com/in/chasecvitale/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="header-link"
         >
-            {/* Left Side: Website Name */}
-            <div className="left">
-                <a href="/" className="header-link">
-                    Chase C. Vitale
-                </a>
-            </div>
-
-            {/* Right Side: Links */}
-            <div className="right">
-                <button 
-                    className="header-link" 
-                    onClick={openPDF} // Open PDF in a new tab
-                >
-                    Résumé
-                </button>
-                <a
-                    href="https://www.linkedin.com/in/chasecvitale/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="header-link"
-                >
-                    LinkedIn
-                </a>
-                <a
-                    href="https://github.com/chasecvitale"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="header-link"
-                >
-                    GitHub
-                </a>
-            </div>
-        </header>
-    );
+          LinkedIn
+        </a>
+        <a
+          href="https://github.com/chasecvitale"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="header-link"
+        >
+          GitHub
+        </a>
+      </div>
+    </header>
+  );
 };
 
 export default Header;
