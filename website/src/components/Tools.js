@@ -12,7 +12,7 @@ import './Tools.css';
 
 const Tools = () => {
     return (
-        <div style={styles.container}>
+        <div className="iconContainer">
             <div className="iconItem">
                 <img src={ReactLogo} alt="React Native" className="iconImage" />
                 <p className="iconLabel">React Native</p>
@@ -51,17 +51,6 @@ const Tools = () => {
             </div>
         </div>
     );
-};
-
-const styles = {
-    container: {
-        display: 'flex',
-        justifyContent: 'center',
-        flexWrap: 'wrap',
-        gap: '60px',
-        marginLeft: '100px',
-        marginRight: '100px',
-    },
 };
 
 export default Tools;

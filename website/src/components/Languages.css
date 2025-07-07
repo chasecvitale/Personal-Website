@@ -1,3 +1,12 @@
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 .iconItem {
     text-align: center;
     transition: transform 0.3s ease; /* Smooth transition for hover effect */
@@ -17,4 +26,25 @@
     color: #2a2829;
     font-size: 20px;
     margin-top: 8px;
+}
+
+@media (max-width: 750px) {
+    .iconImage {
+        width: auto;
+        height: 100px;
+        cursor: default;
+    }  
+    .iconLabel {
+        color: #2a2829;
+        font-size: 28px;
+        margin-top: 8px;
+    }
+    .iconContainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 60px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }

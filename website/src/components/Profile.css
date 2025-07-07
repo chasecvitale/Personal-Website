@@ -8,8 +8,9 @@
 
 .profileSection img {
     width: 400px;
-    height: '100%';
-    margin-right: 100px;
+    height: 100%;
+    margin-right: 50px;
+    margin-left: 0px;
 }
 
 .textSection {
@@ -53,8 +54,16 @@
     }
 
     .profileSection img {
-        margin-right: 0;
-        margin-bottom: 50px;
+        width: 100%;
+        height: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .bodyText {
+    font-size: 18px;
+    color: #2a2829;
+    line-height: 1.45;
     }
 }
 

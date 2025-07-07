@@ -18,3 +18,16 @@
     font-size: 20px;
     margin-top: 8px;
 }
+
+@media (max-width: 750px) {
+    .iconImage {
+        height: 100px;
+        width: auto;
+        cursor: default;
+    }  
+    .iconLabel {
+        color: #2a2829;
+        font-size: 18px;
+        margin-top: 8px;
+    }
+}

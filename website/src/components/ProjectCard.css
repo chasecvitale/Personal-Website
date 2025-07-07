@@ -84,19 +84,19 @@
     }
 
     .nameText {
-        font-size: 23px; /* Smaller font size for small screens */
+        font-size: 18px; /* Smaller font size for small screens */
         margin-left: 20px;
         margin-right: 20px;
     }
 
     .descriptionText {
-        font-size: 23px; /* Smaller font size for small screens */
+        font-size: 18px; /* Smaller font size for small screens */
         margin-left: 20px;
         margin-right: 20px;
     }
 
     .link {
-        font-size: 20px; /* Smaller font size for links */
+        font-size: 18px; /* Smaller font size for links */
         margin-right: 10px; /* Reduce space between links */
         text-decoration: underline;
         margin-left: 20px;
