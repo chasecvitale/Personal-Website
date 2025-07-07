@@ -48,18 +48,18 @@
 
 @media (max-width: 750px) {
     .profileSection {
-        flex-direction: column;
-        align-items: center;
+        display: flex;
+        align-items: flex-start;
         padding-left: 20px;
         padding-right: 20px;
+        flex-direction: column;
     }
 
     .profileSection img {
-        width: 100%;
-        margin-right: 40px;
+        width: auto;
+        height: 100%;
+        margin-right: 10px;
         margin-left: 0px;
-        margin-bottom: 20px;
-        display: block;
     }
 
     .bodyText {
