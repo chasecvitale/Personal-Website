@@ -1,6 +1,4 @@
-import React from 'react';
 import './Footer.css';
-import Resume from '../assets/Vitale-Resume.pdf';
 
 const Footer = () => {
   const openPDF = (e) => {
