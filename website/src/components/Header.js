@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './Header.css';
-import Resume from '../assets/Vitale-Resume.pdf'; // Make sure this path is correct
 
 const Header = () => {
   const [isScrollingDown, setIsScrollingDown] = useState(false);
