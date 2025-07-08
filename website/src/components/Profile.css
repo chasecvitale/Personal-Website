@@ -56,17 +56,15 @@
     }
 
     .profileSection img {
-        width: 100%;
-        height: 100%;
-        margin-right: 10px;
-        margin-left: 0px;
+        width: calc(100vw - 40px);
+        height: min-content;
         margin-bottom: 20px;
     }
 
     .bodyText {
-    font-size: 18px;
-    color: #2a2829;
-    line-height: 1.45;
+        font-size: 18px;
+        color: #2a2829;
+        line-height: 1.45;
     }
 }
 
