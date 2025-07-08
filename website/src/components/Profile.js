@@ -6,7 +6,7 @@ const Profile = () => {
     return (
         <div className="profileSection">
             {/* Profile Image */}
-            <img src={headshot} alt="Profile" />
+            <img src={headshot} alt="Headshot" />
             
             {/* Text Section */}
             <div className="textSection">
