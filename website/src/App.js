@@ -7,6 +7,7 @@ import Profile from './components/Profile';
 import Projects from './components/Projects';
 import Languages from './components/Languages';
 import Tools from './components/Tools';
+import WorkExperience from './components/WorkExperience';
 
 function App() {
     return (
@@ -21,6 +22,8 @@ function App() {
             <Profile />
             <Title title="Projects" />
             <Projects />
+            <Title title="Work Experience" />
+            <WorkExperience />
             <Title title="Languages" />
             <Languages />
             <Title title="Tools" />
