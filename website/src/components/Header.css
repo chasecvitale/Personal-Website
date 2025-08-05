@@ -9,9 +9,11 @@
     background-color: #2a2829;
     position: fixed;
     top: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
     transition: transform 0.3s ease-in-out; /* Smooth transition for appearing/disappearing header */
     z-index: 1000; /* Makes sure the header stays at the top */
+    box-sizing: border-box;
 }
 
 .header.hidden {
@@ -27,7 +29,6 @@
     display: flex;
     gap: 1.5rem;
     align-items: center;
-    margin-right: 200px;
 }
 
 .desktop-nav {
@@ -214,7 +215,12 @@ button.header-link {
 }
 
 /* Media Query for Responsive Design */
-@media (max-width: 1024px) {
+@media (max-width: 750px) {
+    .header {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
     .desktop-nav {
         display: none;
     }
@@ -224,7 +230,7 @@ button.header-link {
     }
     
     .right {
-        margin-right: 50px;
+        margin-right: 0;
     }
 }
 
@@ -235,10 +241,13 @@ button.header-link {
         justify-content: space-between;
         padding-left: 20px;
         padding-right: 20px;
-        padding-top: 25px;
-        padding-bottom: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
         position: fixed;
-        width: 100%;
+        left: 0;
+        right: 0;
+        max-width: 750px;
+        margin: 0 auto;
     }
 
     .left {
@@ -250,6 +259,12 @@ button.header-link {
         flex-direction: row;
         align-items: center;
         margin-right: 0;
+        gap: 0;
+    }
+    
+    .hamburger {
+        position: relative;
+        right: 0;
     }
     
     .mobile-menu {
