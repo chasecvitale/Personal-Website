@@ -18,13 +18,16 @@ const Profile = () => {
 
                 {/* Large Text */}
                 <p className="bodyText">
-                    My name is Chase! I'm currently a student enrolled at <span className="purpleText">NYU</span> studying Mathematics and Computer Science. My passion for problem solving has been constant throughout my academic journey, inspiring me to study these two fields. Mathematics has developed my critical thinking skills, allowing me to approach challenges more precisely. Computer Science has given me the tools to implement my own project ideas, creating real, tangible products.
+                    My name is Chase! I'm currently a student at NYU studying Mathematics and Computer Science, driven by a passion for problem-solving that has remained constant throughout my academic journey. Mathematics has sharpened my critical thinking skills, enabling me to approach complex challenges with precision and analytical rigor. Computer Science has provided me with the technical tools to bring my ideas to life, transforming concepts into real, tangible products.
                     <br></br>
                     <br></br>
-                    <span className="purpleText">NYU</span>'s courses have provided me essential programming skills, such as data management, logical analysis, and manipulating numerical data. Outside of this, my personal projects have developed my skills in UI/UX design, app and web development, and backend storage of data.
+                    Through NYU's rigorous coursework, I've developed essential programming skills including data structures, algorithms, and system design. Beyond academics, my personal projects and internship experience have expanded my expertise into UI/UX design, full-stack mobile and web development, API integration, and backend data management.
                     <br></br>
                     <br></br>
-                    Scroll down to see my recent projects, languages, and tools!
+                    Currently, I'm working as a Software Engineering Intern at Eagor Inc., where I contribute to building a productivity tool that helps people stay on top of their tasks. This hands-on experience has deepened my understanding of startup environments, agile development, and creating user-centered applications.
+                    <br></br>
+                    <br></br>
+                    Scroll down to explore my recent projects, technical skills, and professional experience!
                     <br></br>
                     <br></br>
                 </p>

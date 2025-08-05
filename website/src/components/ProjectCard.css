@@ -23,6 +23,7 @@
     margin: 50px 20px 50px 20px; /* Keep consistent spacing */
 }
 
+
 .textBox {
     display: flex;
     flex-direction: column;

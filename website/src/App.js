@@ -7,6 +7,7 @@ import Profile from './components/Profile';
 import Projects from './components/Projects';
 import Languages from './components/Languages';
 import Tools from './components/Tools';
+import WorkExperience from './components/WorkExperience';
 
 function App() {
     return (
@@ -17,14 +18,26 @@ function App() {
             </Helmet>
             <Header />
             <br/> <br/>
-            <Title title="About Me" />
-            <Profile />
-            <Title title="Projects" />
-            <Projects />
-            <Title title="Languages" />
-            <Languages />
-            <Title title="Tools" />
-            <Tools />
+            <div id="about">
+                <Title title="About Me" />
+                <Profile />
+            </div>
+            <div id="projects">
+                <Title title="Projects" />
+                <Projects />
+            </div>
+            <div id="work">
+                <Title title="Work Experience" />
+                <WorkExperience />
+            </div>
+            <div id="languages">
+                <Title title="Languages" />
+                <Languages />
+            </div>
+            <div id="tools">
+                <Title title="Tools" />
+                <Tools />
+            </div>
             <Title title="" /> 
             <Footer />
         </div>
