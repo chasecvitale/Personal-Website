@@ -9,12 +9,12 @@ const Projects = () => {
        <div style={{width: '100%', gap: '20px'}}>
             
             <ProjectCard 
-                name="Music Tinder" 
+                name="SwipeBeats" 
                 photoUrl={MusicTinder}  
                 links={[
-                    ['Demo', 'https://www.youtube.com/watch?v=VzFGb4SRqw0']
+                    ['Demo', 'https://www.youtube.com/watch?v=4RlmLPf11_I']
                 ]}
-                description="Music Tinder is a Python application I developed to gamify playlist making by transforming users' Spotify libraries into a Tinder-style swiping experience. The application integrates with the Spotify Web API to fetch users' complete music libraries, then organizes tracks by genre using a custom classification system that processes 3,600+ songs. I built the interface using Pygame, implementing OAuth authentication for secure Spotify access and dynamic UI theming that adapts based on album artwork colors. The app features real-time audio streaming through YouTube integration for song previews, allowing users to swipe left to skip or right to save tracks they enjoy. After completing a swiping session, users can automatically generate new Spotify playlists containing all their favorited tracks. This project demonstrated my ability to integrate multiple APIs, handle large datasets, create engaging user interfaces, and build complete applications that solve real user problems around music discovery."
+                description="SwipeBeats is a Python application I developed to gamify playlist making by transforming users' Spotify libraries into a Tinder-style swiping experience. The application integrates with the Spotify Web API to fetch users' complete music libraries, then organizes tracks by genre using a custom classification system that processes 3,600+ songs. I built the interface using Pygame, implementing OAuth authentication for secure Spotify access and dynamic UI theming that adapts based on album artwork colors. The app features real-time audio streaming through YouTube integration for song previews, allowing users to swipe left to skip or right to save tracks they enjoy. After completing a swiping session, users can automatically generate new Spotify playlists containing all their favorited tracks. This project demonstrated my ability to integrate multiple APIs, handle large datasets, create engaging user interfaces, and build complete applications that solve real user problems around music discovery."
             />
             <ProjectCard 
                 name="places2be" 
