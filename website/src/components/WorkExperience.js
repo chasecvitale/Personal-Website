@@ -12,8 +12,7 @@ const WorkExperience = () => {
                 links={[
                     ['Eagor Website', 'https://www.eagor.ai']
                 ]}
-                description={"At Eagor Inc., I'm developing an iOS productivity app that transforms inbox, messages, and calendar chaos into a collaborative, swipeable action feed. Unlike traditional productivity tools that isolate users, Eagor is built for how people actually work together. As a Software Engineering Intern, I deliver features weekly to demonstrate product viability to investors, working across both Firebase backend and Swift frontend. My contributions include local calendar storage systems, UI components like toast notifications, and user experience improvements for the growing user base. This role has provided valuable startup experience and full-stack mobile development skills."}
-            />
+                description={"At Eagor Inc., I helped develop an iOS productivity app that transformed inbox, messages, and calendar chaos into a collaborative, swipeable action feed. Unlike traditional productivity tools that isolated users, Eagor was built for how people actually worked together. As a Software Engineering Intern, I delivered features weekly to demonstrate product viability to investors, working across both Firebase backend and Swift frontend. My contributions included local calendar storage systems, UI components like toast notifications, and user experience improvements for the growing user base. This role provided valuable startup experience and full-stack mobile development skills."}            />
 
             <ProjectCard 
                 name="NYU High Speed Research Network" 
