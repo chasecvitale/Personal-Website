@@ -7,6 +7,8 @@ import expo from '../assets/expo.png';
 import xcode from '../assets/xcode.png';
 import firebase from '../assets/firebase.svg';
 import clinicjsdoctor from '../assets/clinicjsdoctor.png';
+import tailwind from '../assets/tailwind.png';
+
 
 import './Tools.css';
 
@@ -48,6 +50,10 @@ const Tools = () => {
             <div className="iconItem">
                 <img src={clinicjsdoctor} alt="Clinic.js Doctor" className="iconImage" />
                 <p className="iconLabel">Clinic.js Doctor</p>
+            </div>
+            <div className="iconItem">
+                <img src={tailwind} alt="TailwindCSS" className="iconImage" />
+                <p className="iconLabel">TailwindCSS</p>
             </div>
         </div>
     );

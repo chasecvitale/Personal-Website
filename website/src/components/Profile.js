@@ -24,7 +24,7 @@ const Profile = () => {
                     Through NYU's rigorous coursework, I've developed essential programming skills including data structures, algorithms, and system design. Beyond academics, my personal projects and internship experience have expanded my expertise into UI/UX design, full-stack mobile and web development, API integration, and backend data management.
                     <br></br>
                     <br></br>
-                    Currently, I'm working as a Software Engineering Intern at Eagor Inc., where I contribute to building a productivity tool that helps people stay on top of their tasks. This hands-on experience has deepened my understanding of startup environments, agile development, and creating user-centered applications.
+                    During the Summer of 2025, I worked as a Software Engineering Intern at Eagor Inc., where I helped build a productivity tool that assisted people stay on top of their tasks. This hands-on experience deepened my understanding of startup environments, agile development, and creating user-centered applications.
                     <br></br>
                     <br></br>
                     Scroll down to explore my recent projects, technical skills, and professional experience!
