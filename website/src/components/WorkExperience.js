@@ -7,14 +7,7 @@ import betterment from '../assets/betterment.png';
 const WorkExperience = () => {
     return (
        <div style={{width: '100%', gap: '20px'}}>
-            <ProjectCard 
-                name="Betterment" 
-                photoUrl={betterment} 
-                links={[
-                    ['Betterment', 'https://www.betterment.com']
-                ]}
-                description="I will be working as a Software Engineering intern for the Summer of 2026."
-            />
+
             <ProjectCard 
                 name="Eagor Inc." 
                 photoUrl={eagor} 
