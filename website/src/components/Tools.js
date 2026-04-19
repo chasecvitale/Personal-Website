@@ -59,8 +59,8 @@ const Tools = () => {
                 <p className="iconLabel">GitHub Actions</p>
             </div>
             <div className="iconItem">
-                <img src={pytest} alt="pytest" className="iconImage" />
-                <p className="iconLabel">pytest</p>
+                <img src={pytest} alt="Pytest" className="iconImage" />
+                <p className="iconLabel">Pytest</p>
             </div>
             <div className="iconItem">
                 <img src={expo} alt="Expo" className="iconImage" />

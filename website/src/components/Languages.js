@@ -7,6 +7,7 @@ import Swift from "../assets/swift.png";
 import Cpp from "../assets/C++.png";
 import html from "../assets/html.png";
 import css from "../assets/css.svg";
+import matlab from "../assets/matlab.png";
 import './Languages.css';
 
 const Languages = () => {
@@ -43,6 +44,10 @@ const Languages = () => {
             <div className="iconItem">
                 <img src={css} alt="CSS" className="iconImage" />
                 <p className="iconLabel">CSS</p>
+            </div>
+            <div className="iconItem">
+                <img src={matlab} alt="MATLAB" className="iconImage" />
+                <p className="iconLabel">MATLAB</p>
             </div>
         </div>
     );
