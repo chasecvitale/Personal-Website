@@ -2,7 +2,6 @@ import React from 'react';
 import ReactLogo from '../assets/react.png';
 import nodejs from '../assets/nodejs.png';
 import git from '../assets/git.png';
-import css from '../assets/css.svg';
 import expo from '../assets/expo.png';
 import xcode from '../assets/xcode.png';
 import firebase from '../assets/firebase.svg';
@@ -11,6 +10,8 @@ import tailwind from '../assets/tailwind.png';
 import flask from '../assets/flask.png';
 import mongodb from '../assets/mongodb.png';
 import docker from '../assets/docker.png';
+import pytest from '../assets/pytest.png';
+import githubactions from '../assets/githubactions.png';
 
 import './Tools.css';
 
@@ -28,10 +29,6 @@ const Tools = () => {
             <div className="iconItem">
                 <img src={tailwind} alt="TailwindCSS" className="iconImage" />
                 <p className="iconLabel">TailwindCSS</p>
-            </div>
-            <div className="iconItem">
-                <img src={css} alt="CSS" className="iconImage" />
-                <p className="iconLabel">CSS</p>
             </div>
             <div className="iconItem">
                 <img src={nodejs} alt="Node.js" className="iconImage" />
@@ -56,6 +53,14 @@ const Tools = () => {
             <div className="iconItem">
                 <img src={git} alt="Git" className="iconImage" />
                 <p className="iconLabel">Git</p>
+            </div>
+            <div className="iconItem">
+                <img src={githubactions} alt="GitHub Actions" className="iconImage" />
+                <p className="iconLabel">GitHub Actions</p>
+            </div>
+            <div className="iconItem">
+                <img src={pytest} alt="pytest" className="iconImage" />
+                <p className="iconLabel">pytest</p>
             </div>
             <div className="iconItem">
                 <img src={expo} alt="Expo" className="iconImage" />

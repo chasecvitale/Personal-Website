@@ -5,6 +5,8 @@ import JS from "../assets/js.png";
 import C from "../assets/c.png";
 import Swift from "../assets/swift.png";
 import Cpp from "../assets/C++.png";
+import html from "../assets/html.png";
+import css from "../assets/css.svg";
 import './Languages.css';
 
 const Languages = () => {
@@ -33,6 +35,14 @@ const Languages = () => {
             <div className="iconItem">
                 <img src={Swift} alt="Swift" className="iconImage" />
                 <p className="iconLabel">Swift</p>
+            </div>
+            <div className="iconItem">
+                <img src={html} alt="HTML" className="iconImage" />
+                <p className="iconLabel">HTML</p>
+            </div>
+            <div className="iconItem">
+                <img src={css} alt="CSS" className="iconImage" />
+                <p className="iconLabel">CSS</p>
             </div>
         </div>
     );
