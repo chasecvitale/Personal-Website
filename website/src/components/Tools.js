@@ -8,7 +8,9 @@ import xcode from '../assets/xcode.png';
 import firebase from '../assets/firebase.svg';
 import clinicjsdoctor from '../assets/clinicjsdoctor.png';
 import tailwind from '../assets/tailwind.png';
-
+import flask from '../assets/flask.png';
+import mongodb from '../assets/mongodb.png';
+import docker from '../assets/docker.png';
 
 import './Tools.css';
 
@@ -16,24 +18,44 @@ const Tools = () => {
     return (
         <div className="iconContainer">
             <div className="iconItem">
+                <img src={ReactLogo} alt="React" className="iconImage" />
+                <p className="iconLabel">React</p>
+            </div>
+            <div className="iconItem">
                 <img src={ReactLogo} alt="React Native" className="iconImage" />
                 <p className="iconLabel">React Native</p>
             </div>
             <div className="iconItem">
-                <img src={ReactLogo} alt="React" className="iconImage" />
-                <p className="iconLabel">React</p>
+                <img src={tailwind} alt="TailwindCSS" className="iconImage" />
+                <p className="iconLabel">TailwindCSS</p>
+            </div>
+            <div className="iconItem">
+                <img src={css} alt="CSS" className="iconImage" />
+                <p className="iconLabel">CSS</p>
             </div>
             <div className="iconItem">
                 <img src={nodejs} alt="Node.js" className="iconImage" />
                 <p className="iconLabel">Node.js</p>
             </div>
             <div className="iconItem">
-                <img src={git} alt="Git" className="iconImage" />
-                <p className="iconLabel">Git</p>
+                <img src={flask} alt="Flask" className="iconImage" />
+                <p className="iconLabel">Flask</p>
             </div>
             <div className="iconItem">
-                <img src={css} alt="CSS" className="iconImage" />
-                <p className="iconLabel">CSS</p>
+                <img src={mongodb} alt="MongoDB" className="iconImage" />
+                <p className="iconLabel">MongoDB</p>
+            </div>
+            <div className="iconItem">
+                <img src={firebase} alt="Firebase" className="iconImage" />
+                <p className="iconLabel">Firebase</p>
+            </div>
+            <div className="iconItem">
+                <img src={docker} alt="Docker" className="iconImage" />
+                <p className="iconLabel">Docker</p>
+            </div>
+            <div className="iconItem">
+                <img src={git} alt="Git" className="iconImage" />
+                <p className="iconLabel">Git</p>
             </div>
             <div className="iconItem">
                 <img src={expo} alt="Expo" className="iconImage" />
@@ -44,16 +66,8 @@ const Tools = () => {
                 <p className="iconLabel">Xcode</p>
             </div>
             <div className="iconItem">
-                <img src={firebase} alt="Google Firebase" className="iconImage" />
-                <p className="iconLabel">Google Firebase</p>
-            </div>
-            <div className="iconItem">
                 <img src={clinicjsdoctor} alt="Clinic.js Doctor" className="iconImage" />
-                <p className="iconLabel">Clinic.js Doctor</p>
-            </div>
-            <div className="iconItem">
-                <img src={tailwind} alt="TailwindCSS" className="iconImage" />
-                <p className="iconLabel">TailwindCSS</p>
+                <p className="iconLabel">Clinic.js</p>
             </div>
         </div>
     );
