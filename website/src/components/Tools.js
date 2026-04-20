@@ -11,6 +11,7 @@ import flask from '../assets/flask.png';
 import mongodb from '../assets/mongodb.png';
 import docker from '../assets/docker.png';
 import pytest from '../assets/pytest.png';
+import figma from '../assets/figma.png';
 import githubactions from '../assets/githubactions.png';
 
 import './Tools.css';
@@ -29,6 +30,10 @@ const Tools = () => {
             <div className="iconItem">
                 <img src={tailwind} alt="TailwindCSS" className="iconImage" />
                 <p className="iconLabel">TailwindCSS</p>
+            </div>
+            <div className="iconItem">
+                <img src={figma} alt="Figma" className="iconImage" />
+                <p className="iconLabel">Figma</p>
             </div>
             <div className="iconItem">
                 <img src={nodejs} alt="Node.js" className="iconImage" />
