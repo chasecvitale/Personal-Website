@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectCard from './ProjectCard';
 import places2be from '../assets/places2be.png';
 import MusicTinder from '../assets/MusicTinder.png';
-import flakemate from '../assets/flakemate.png';
+import flakemate from '../assets/flakemate.svg';
 import CV from '../assets/CV.png';
 
 const Projects = () => {
