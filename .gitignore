@@ -29,3 +29,5 @@ npm-debug.log*
 # Cache
 .cache/
 .parcel-cache/
+.DS_Store
+website/.DS_Store
