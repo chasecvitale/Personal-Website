@@ -2,12 +2,21 @@ import React from 'react';
 import ProjectCard from './ProjectCard';
 import places2be from '../assets/places2be.png';
 import MusicTinder from '../assets/MusicTinder.png';
+import flakemate from '../assets/flakemate.png';
 import CV from '../assets/CV.png';
 
 const Projects = () => {
     return (
        <div style={{width: '100%', gap: '20px'}}>
-            
+            <ProjectCard 
+                name="FlakeMate" 
+                photoUrl={flakemate}  
+                links={[
+                    ['Demo', 'https://youtu.be/85JYJnEVr28'],
+                    ['GitHub', 'https://github.com/swe-students-spring2026/5-final-flake_mates-1']
+                ]}
+                description="SwipeBeats is a Python application I developed to gamify playlist making by transforming users' Spotify libraries into a swiping experience. The application integrates with the Spotify Web API to fetch users' complete music libraries, then organizes tracks by genre using a custom classification system that processes 3,600+ songs. I built the interface using Pygame, implementing OAuth authentication for secure Spotify access and dynamic UI theming that adapts based on album artwork colors. The app features real-time audio streaming through YouTube integration for song previews, allowing users to swipe left to skip or right to save tracks they enjoy. After completing a listening session, users can automatically generate new Spotify playlists containing all their favorited tracks. This project demonstrated my ability to integrate multiple APIs, handle large datasets, create engaging user interfaces, and build complete applications that solve real user problems."
+            />
             <ProjectCard 
                 name="SwipeBeats" 
                 photoUrl={MusicTinder}  
