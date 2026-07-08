@@ -2,11 +2,19 @@ import React from 'react';
 import ProjectCard from './ProjectCard';
 import nyu from '../assets/nyu.png';
 import eagor from '../assets/eagor.png';
+import betterment from '../assets/betterment.png';
 
 const WorkExperience = () => {
     return (
        <div style={{width: '100%', gap: '20px'}}>
-
+            <ProjectCard 
+                name="Betterment" 
+                photoUrl={betterment} 
+                links={[
+                    ['Betterment', 'https://www.betterment.com']
+                ]}
+                description="Currently working as a Software Engineering intern."
+            />
             <ProjectCard 
                 name="Eagor" 
                 photoUrl={eagor} 

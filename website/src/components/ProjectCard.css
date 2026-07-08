@@ -17,7 +17,7 @@
 
 .image {
     flex-shrink: 0; /* Prevent the image from shrinking */
-    width: 230px; /* Set a fixed width for uniform text alignment */
+    width: 200px; /* Set a fixed width for uniform text alignment */
     height: 100%;
     object-fit: cover; /* Ensure proper image scaling */
     margin: 50px 20px 50px 20px; /* Keep consistent spacing */
