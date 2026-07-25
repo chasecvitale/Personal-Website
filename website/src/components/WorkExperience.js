@@ -13,7 +13,7 @@ const WorkExperience = () => {
                 links={[
                     ['Betterment', 'https://www.betterment.com']
                 ]}
-                description="Currently working as a Software Engineering intern."
+                description="As a Software Engineering Intern on Betterment's Market Data team, I am building an automated mutual fund eligibility system to close a critical gap in trade processing. Previously, mismatches between a mutual fund's eligibility and an advisor's trade only surfaced after the trade was submitted, causing 8 cross-team incidents in the past year — one requiring 8 teams and 14 days to resolve. I am building a pipeline that automatically ingests Schwab's daily 16,000-fund data file into structured Postgres tables, replacing Ops' manual lookups with direct query access, and designing a change-log system to track eligibility updates over time. Using this data, I am writing a PL/pgSQL function that evaluates eligibility trade-by-trade, blocking ineligible trades before they reach Apex. Building this requires working directly with Operations to translate their domain expertise into logic, and the function will be called directly by Betterment's Trading team in their own production systems."
             />
             <ProjectCard 
                 name="Eagor" 
