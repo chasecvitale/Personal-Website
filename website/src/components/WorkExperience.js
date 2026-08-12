@@ -3,7 +3,6 @@ import ProjectCard from './ProjectCard';
 import nyu from '../assets/nyu.png';
 import eagor from '../assets/eagor.png';
 import betterment from '../assets/betterment.png';
-import courant from '../assets/courant.jpg';
 
 const WorkExperience = () => {
     return (
