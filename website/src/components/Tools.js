@@ -13,6 +13,7 @@ import docker from '../assets/docker.png';
 import pytest from '../assets/pytest.png';
 import figma from '../assets/figma.png';
 import githubactions from '../assets/githubactions.png';
+import postgresql from '../assets/postgresql.svg';
 
 import './Tools.css';
 
@@ -30,6 +31,10 @@ const Tools = () => {
             <div className="iconItem">
                 <img src={tailwind} alt="TailwindCSS" className="iconImage" />
                 <p className="iconLabel">TailwindCSS</p>
+            </div>
+            <div className="iconItem">
+                <img src={postgresql} alt="PostgreSQL" className="iconImage" />
+                <p className="iconLabel">PostgreSQL</p>
             </div>
             <div className="iconItem">
                 <img src={figma} alt="Figma" className="iconImage" />

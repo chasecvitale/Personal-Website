@@ -3,6 +3,7 @@ import ProjectCard from './ProjectCard';
 import nyu from '../assets/nyu.png';
 import eagor from '../assets/eagor.png';
 import betterment from '../assets/betterment.png';
+import courant from '../assets/courant.jpg';
 
 const WorkExperience = () => {
     return (
@@ -13,7 +14,7 @@ const WorkExperience = () => {
                 links={[
                     ['Betterment', 'https://www.betterment.com']
                 ]}
-                description="As a Software Engineering Intern on Betterment's Market Data team, I am building an automated mutual fund eligibility system to close a critical gap in trade processing. Previously, mismatches between a mutual fund's eligibility and an advisor's trade only surfaced after the trade was submitted, causing 8 cross-team incidents in the past year — one requiring 8 teams and 14 days to resolve. I am building a pipeline that automatically ingests Schwab's daily 16,000-fund data file into structured Postgres tables, replacing Ops' manual lookups with direct query access, and designing a change-log system to track eligibility updates over time. Using this data, I am writing a PL/pgSQL function that evaluates eligibility trade-by-trade, blocking ineligible trades before they reach Apex. Building this requires working directly with Operations to translate their domain expertise into logic, and the function will be called directly by Betterment's Trading team in their own production systems."
+                description="Summer 2026"
             />
             <ProjectCard 
                 name="Eagor" 
@@ -31,6 +32,12 @@ const WorkExperience = () => {
                     ['Corelink', 'https://corelink.hsrn.nyu.edu']
                 ]}
                 description="At NYU's High Speed Research Network, I collaborated with a selective research team to develop Corelink benchmarking infrastructure using Python. I programmed configurable benchmarking tools to measure UDP, TCP, and WebSocket performance across various network scenarios, dedicating 10 hours per week to the project including weekly stand-up meetings. Through systematic testing, I identified and reported a critical TCP data-loss bug occurring at high payload sizes, which led to a confirmed fix by the team lead that increased overall data throughput. I also authored two comprehensive benchmarking reports with detailed protocol analysis and optimization recommendations. This experience provided valuable exposure to network protocol research, collaborative development practices, and technical writing in an academic research environment."
+            />
+            <ProjectCard 
+                name="NYU Courant Institute of Mathematical Sciences" 
+                photoUrl={nyu} 
+                links={[]}
+                description="As an Undergraduate Course Assistant for NYU’s introductory C programming course, I reviewed more than 100 student programming assignments each month, helping students develop strong foundations in systems programming. Beyond evaluating correctness, I analyzed submissions for algorithmic efficiency, memory safety, and adherence to C best practices while enforcing academic integrity through plagiarism and AI-assisted code reviews. Reading hundreds of unique solutions sharpened my ability to recognize common programming pitfalls, reason about code quality, and communicate technical feedback effectively."
             />
        </div>
     );
