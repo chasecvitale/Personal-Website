@@ -17,20 +17,24 @@ const Profile = () => {
                 </div>
 
                 {/* Large Text */}
-                <p className="bodyText">
-                    My name is Chase! I'm currently a student at NYU studying Mathematics and Computer Science, driven by a passion for problem-solving that has remained constant throughout my academic journey. Mathematics has sharpened my critical thinking skills, enabling me to approach complex challenges with precision and analytical rigor. Computer Science has provided me with the technical tools to bring my ideas to life, transforming concepts into real, tangible products.
+               <p className="bodyText">
+                    My name is Chase! I'm currently a student at NYU studying Mathematics and Computer Science, driven by a passion for problem-solving that has remained constant throughout my academic journey. Mathematics has strengthened my critical thinking and analytical skills, while Computer Science has given me the tools to turn ideas into real, tangible products.
                     <br></br>
                     <br></br>
-                    Through NYU's rigorous coursework, I've developed essential programming skills including data structures, algorithms, and system design. Beyond academics, my personal projects and internship experience have expanded my expertise into UI/UX design, full-stack mobile and web development, API integration, and backend data management.
+                    Through NYU's rigorous coursework, I've developed a strong foundation in data structures, algorithms, software engineering, and systems. Beyond academics, my personal projects and professional experience have expanded my skills across full-stack development, backend systems, API integration, database management, and UI/UX design.
                     <br></br>
                     <br></br>
-                    During the Summer of 2025, I worked as a Software Engineering Intern at Eagor Inc., where I helped build a productivity tool that assisted people stay on top of their tasks. This hands-on experience deepened my understanding of startup environments, agile development, and creating user-centered applications.
+                    During Summer 2026, I worked as a Software Engineering Intern at Betterment on the Market Data team, where I built backend systems supporting investment operations and financial data workflows. Working with production systems and real user data strengthened my interest in building reliable software and solving complex problems at scale.
+                    <br></br>
+                    <br></br>
+                    Before Betterment, I worked as a Software Engineering Intern at Eagor Inc., a startup where I helped build a productivity platform and gained hands-on experience with mobile development, agile collaboration, and creating user-centered applications.
                     <br></br>
                     <br></br>
                     Scroll down to explore my recent projects, technical skills, and professional experience!
                     <br></br>
                     <br></br>
                 </p>
+
                 <div className="helloSection">
                     <div className="line"></div>
                 </div>
